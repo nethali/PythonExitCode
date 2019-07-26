@@ -18,7 +18,7 @@ node {
     stage('Fail exit') {
         
         def EXECUTION_RESULT = sh (
-            script: 'python application.py 1', returnStatus: true
+            script: 'python application.py 0', returnStatus: true
         )
         
         echo "Exit Code: ${EXECUTION_RESULT}"
